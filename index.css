@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&family=Cookie&family=Tangerine&family=EB+Garamond:ital@0;1&display=swap');
+
+.background1{
+    background-image: linear-gradient(rgba(28, 28, 28, 0.3),rgba(28, 28, 28, 0.3)), url('./images/poolGarden.png');
+    background-size: cover;
+    height: 100vh;
+
+}
+
+
+.background1 *{
+    color: aliceblue;
+}
+.nav{
+    padding: 2em;
+}
+.nav button{
+    border: none;
+    background-color: transparent;
+}
+.menu-icon{
+    cursor: pointer;
+}
+
+.menu{
+    width: max-content;
+    background-color: rgba(32, 32, 32, 0.616);
+    line-height: 1.1em;
+    border-radius: 10px;
+    z-index: 3;
+}
+.show{
+    display: none;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+}
+.title{
+    margin: 1.1em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 62px;
+    color: aliceblue;
+    animation: to-right 1s ease-in-out;
+}
+.text{
+    text-align: center;
+    font-style: italic;
+}
+.description{
+    animation: to-left 1s ease-in-out;
+
+}
+@keyframes to-right{
+    0%{
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes to-left{
+    0%{
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 680px) {
+    .title{
+        font-size: 42px;
+        text-align: center;
+    }
+}
+.top-3-section{
+    margin-top: 40px;
+    font-family: 'EB Garamond', serif;
+
+}
+.samples img{
+    width: 100%;
+    object-fit: cover;
+    min-height: 300px;
+    max-height: 300px;
+}
+.top-3-title{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}
+.quote{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.filler{
+    height: 50px;
+}
