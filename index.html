@@ -8,14 +8,33 @@
     <link rel="stylesheet" href="./myFramework.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./slider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <script>
         function show() {
-        document.getElementById('menu').classList.toggle('show');
-        document.getElementById('menu-icon').classList.toggle('menu-icon-bg');
-
-}</script>
+            document.getElementById('menu').classList.toggle('show');
+            document.getElementById('menu-icon').classList.toggle('menu-icon-bg');
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+        $("#menu-icon").click(function () {
+            window.setTimeout(function() {
+        $("#menu").toggleClass('hide').toggleClass('show');
+    }, 100);
+});
+});
+    </script>
+    <script>
+        $(document).ready(function(){
+        $(".menu li").click(function () {
+            window.setTimeout(function() {
+        $("#menu").toggleClass('hide').toggleClass('show');
+    }, 2000);
+});
+});
+    </script>
 </head>
 <body>
     <!--Header-->
@@ -24,11 +43,11 @@
             <div class="row">
                 <div class="col-12 m-0 flex space-between nav">
                     <div class="relative">
-                        <button id="menu-icon" class="" onclick="show()"><span class="iconify menu-icon hover menu-icon-bg" data-icon="heroicons-solid:menu" data-width="32px"></span></button>
-                        <ul class="menu show" id="menu">
-                            <li onclick="show()"><a href="/">About us</a></li>
-                            <li ><a onclick="show()" href="#portfolio">Portfolio</a></li>
-                            <li onclick="show()"><a href="#contact">Contact</a></li>
+                        <button id="menu-icon" class="" ><span class="iconify menu-icon hover menu-icon-bg" data-icon="heroicons-solid:menu" data-width="32px"></span></button>
+                        <ul class="menu show hide" id="menu">
+                            <li><a href="/">About us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="socials">
