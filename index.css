@@ -20,6 +20,8 @@
 }
 .menu-icon{
     cursor: pointer;
+    animation: to-right 1s linear;
+    color: aliceblue; 
 }
 
 .menu{
@@ -34,6 +36,29 @@
 }
 .show{
     display: none;
+}
+.socials{
+    animation: to-left 1s linear;
+}
+@keyframes to-right{
+    0%{
+        transform: translateX(-40%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes to-left{
+    0%{
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 .content{
     width: 100%;
@@ -87,12 +112,21 @@
     font-family: 'EB Garamond', serif;
 
 }
+.img{
+    width: 100%
+}
 .samples img{
     width: 100%;
     object-fit: cover;
     min-height: 300px;
     max-height: 300px;
 }
+.samples img{
+    transition: all 500ms linear;
+  }
+  .samples img:hover{
+    transform: scale(1.01);
+  }
 .top-3-title{
     margin-bottom: 30px;
     text-align: center;
