@@ -191,3 +191,13 @@
         width: 90px;
     }
 }
+.socials.absolute{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.socials-bg{
+    background-color: rgba(231, 224, 193, 0.589);
+}
