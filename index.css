@@ -1,169 +1,193 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&family=Cookie&family=Tangerine&family=EB+Garamond:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&family=Cookie&family=Tangerine&family=EB+Garamond:ital@0;1&display=swap");
 
-.background1{
-    background-image: linear-gradient(rgba(28, 28, 28, 0.3),rgba(28, 28, 28, 0.3)), url('./images/poolGarden.png');
-    background-size: cover;
-    height: 100vh;
-
-}
-
-
-.background1 *{
-    color: aliceblue;
-}
-.nav{
-    padding: 2em;
-}
-.nav button{
-    border: none;
-    background-color: transparent;
-}
-.menu-icon{
-    cursor: pointer;
-    animation: to-right 1s linear;
-    color: aliceblue; 
-}
-.menu-icon-bg{
-    background-color: rgba(32, 32, 32, 0.795);
-}
-.menu{
-    position: absolute;
-    top: 0.8em;
-    left: 0.325em;
-    width: max-content;
-    background-color: rgba(32, 32, 32, 0.795);
-    line-height: 1.1em;
-    z-index: 3;
-    animation: drop-menu 500ms ease-in-out ;
-}
-.menu >*{
-    color: aliceblue;
-}
-.show{
-    display: block;
-    
-}
-.hide{
-    display: none;
+.background1 {
+  background-image: linear-gradient(
+      rgba(29, 28, 17, 0.3),
+      rgba(28, 28, 28, 0.3)
+    ),
+    url("./images/poolGarden.png");
+  background-size: cover;
+  height: 100vh;
 }
 
-@keyframes drop-menu{
-    0%{
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    80%{
-        opacity: 0.5;
-    }
-    100%{
-        transform: translateY(0%);
-        opacity: 1;
-    }
+.header-bg {
+  background-color: #3b351675;
 }
-.hide{
-    display: none;
+.background1 * {
+  color: aliceblue;
 }
-.socials{
-    animation: to-left 1s linear;
+.nav {
+  padding: 2em;
 }
-@keyframes to-right{
-    0%{
-        transform: translateX(-40%);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0%);
-        opacity: 1;
-    }
+.nav button {
+  border: none;
+  background-color: transparent;
 }
-@keyframes to-left{
-    0%{
-        transform: translateX(20%);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0%);
-        opacity: 1;
-    }
+.menu-icon {
+  cursor: pointer;
+  animation: to-right 1s linear;
+  color: aliceblue;
 }
-.content{
-    width: 100%;
-    position: absolute;
-    top: 30%;
-    bottom: 30%;
+.menu-icon-bg {
+  background-color: rgba(85, 66, 19, 0.795);
 }
-.title{
-    margin: 1.1em;
-    font-family: 'Raleway', sans-serif;
-    font-size: 62px;
-    color: aliceblue;
-    animation: to-right 1s ease-in-out;
+.menu {
+  position: absolute;
+  top: 0.8em;
+  left: 0.325em;
+  width: max-content;
+  background-color: rgba(66, 58, 23, 0.795);
+  line-height: 1.1em;
+  z-index: 3;
+  animation: drop-menu 500ms ease-in-out;
 }
-.text{
-    text-align: center;
-    font-style: italic;
+.menu3 {
+  position: absolute;
+  top: 8em;
+  left: 0.325em;
+  width: max-content;
+  background-color: rgba(46, 43, 33, 0.795);
+  line-height: 1.1em;
+  z-index: 3;
+  animation: drop-menu 500ms ease-in-out;
 }
-.description{
-    animation: to-left 1s ease-in-out;
+.menu > * {
+  color: aliceblue;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
 
+@keyframes drop-menu {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
-@keyframes to-right{
-    0%{
-        transform: translateX(-10%);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0%);
-        opacity: 1;
-    }
+.hide {
+  display: none;
 }
-@keyframes to-left{
-    0%{
-        transform: translateX(10%);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0%);
-        opacity: 1;
-    }
+.socials {
+  color: rgb(59, 53, 36);
+  animation: to-left 1s linear;
+}
+@keyframes to-right {
+  0% {
+    transform: translateX(-40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes to-left {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.banner {
+  height: 800px;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  bottom: 30%;
+}
+.title {
+  margin: 1.1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 62px;
+  color: aliceblue;
+  animation: to-right 1s ease-in-out;
+}
+.text {
+  text-align: center;
+  font-style: italic;
+}
+.description {
+  animation: to-left 1s ease-in-out;
+}
+@keyframes to-right {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes to-left {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 680px) {
-    .title{
-        font-size: 42px;
-        text-align: center;
-    }
+  .title {
+    font-size: 42px;
+    text-align: center;
+  }
 }
-.top-3-section{
-    margin-top: 40px;
-    font-family: 'EB Garamond', serif;
-
+.top-3-section {
+  margin-top: 40px;
+  font-family: "EB Garamond", serif;
 }
-.img{
-    width: 100%
-}
-.samples img{
+.img {
     width: 100%;
     object-fit: cover;
-    min-height: 300px;
-    max-height: 300px;
-}
-.samples img{
-    transition: all 500ms linear;
+    transition: all 1s linear;
   }
-  .samples img:hover{
-    transform: scale(1.01);
-  }
-.top-3-title{
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'EB Garamond', serif;
-    font-style: italic;
+
+.samples img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 300px;
+  max-height: 300px;
 }
-.quote{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.samples img {
+  transition: all 500ms linear;
 }
-.filler{
-    height: 50px;
+.samples img:hover {
+  transform: scale(1.01);
+}
+.top-3-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+}
+.quote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.filler {
+  height: 80px;
+}
+@media screen and (max-width: 700px) {
+    .logo2 {
+        width: 90px;
+    }
 }
