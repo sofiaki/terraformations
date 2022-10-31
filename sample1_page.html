@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Formations</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="./myFramework.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script>
+        function show() {
+            document.getElementById('menu').classList.toggle('show');
+            document.getElementById('menu-icon').classList.toggle('menu-icon-bg');
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+        $("#menu-icon").click(function () {
+            window.setTimeout(function() {
+        $("#menu").toggleClass('hide').toggleClass('show');
+    }, 100);
+});
+});
+    </script>
+    <script>
+        $(document).ready(function(){
+        $(".menu li").click(function () {
+            window.setTimeout(function() {
+        $("#menu").toggleClass('hide').toggleClass('show');
+    }, 2000);
+});
+});
+    </script>
+  </head>  
+  <body>
+    <div class="container m-0" style="height: 200px;">
+        <div class="header">
+            <div class="row">
+                <div class="col-12 m-0 flex space-between nav">
+                    <div class="relative">
+                        <div>
+                         <img class="logo2" src="./images/terra-logo3.png" width="100px">
+                        </div>
+                        <div>
+                            <button id="menu-icon" class="button" ><span class="iconify" data-icon="carbon:overflow-menu-horizontal" data-width="48"></span></span></button>
+                            <ul class="menu3 show hide" id="menu">
+                                <li><a href="/">About us</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="socials absolute">
+            <a href="/"><span class="iconify hover" data-icon="ic:outline-account-circle"  data-width="32px"></span></a>
+            <a href="https://github.com/sofiaki" target="_blank"><span class="iconify hover" data-icon="foundation:social-github" data-width="32"></span></a>
+            <a href="https://br.pinterest.com/levato/beautiful-places/" target="_blank"><span class="iconify hover" data-icon="foundation:social-pinterest" data-width="32"></span></a>
+        </div>
+    </div>
+    <div style="display:flex">
+    <div class="img" style="width:fit-content">
+        <img src="./images/sample1.png" alt="img1">
+    </div>
+    <div class="place" style="padding:10px">
+        <h2>Sample3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+</div>
+</body>
+</html>
